@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.window-box {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#svgc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+#svgc .info {
+    display: inline;
+    color: #fff;
+    line-height: 30px;
+}
+
+#svgc .es {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    width: 96%;
+    height: 90%;
+    padding: 0 2%;
+}
+
+#svgc .es::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#svgc .es div {
+    display: inline-block;
+    width: calc(100% / var(--e-amount) - 0.67px);
+    background: #fff;
+    border-right: 1px solid #000;
+}
